@@ -1,0 +1,9 @@
+# Degree of Freedom
+
+
+---
+### Defination:
+
+
+
+---

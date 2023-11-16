@@ -1,0 +1,7 @@
+# Gauss-Jordan Method
+
+
+---
+
+---
+#### TAGS
