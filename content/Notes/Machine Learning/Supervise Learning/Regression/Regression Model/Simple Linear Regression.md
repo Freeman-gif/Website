@@ -87,7 +87,7 @@ From this, we obtain the following sums of squares and crossproducts.
 
 $\sum x=72 \quad \sum y=6185 \quad \sum x^2=504 \quad \sum x y=39600 \quad \sum y^2=3300627$
 
-$$
+$
 \begin{array}{cccccc}
 \text { Week } & \text { Space }(x) & \text { Sales }(y) & x^2 & x y & y^2 \\
 \hline 1 & 6 & 526 & 36 & 3156 & 276676 \\
@@ -102,7 +102,7 @@ $$
 10 & 6 & 570 & 36 & 3420 & 324900 \\
 11 & 3 & 346 & 9 & 1038 & 119716 \\
 12 & 9 & 672 & 81 & 6048 & 451584
-\end{array}$$
+\end{array}$
 
 $$
 \begin{gathered}

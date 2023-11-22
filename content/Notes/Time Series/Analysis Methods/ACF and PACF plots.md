@@ -1,51 +1,69 @@
 # ACF and PACF plots
 
 
----
-### PACF: Comphe
-The partial auto correlation ( PACF) is measuring the direct corelation between $X_{t}$ and $X_{t-h}$
-
-#### Idea:
-example: hot dog price
-
-| $S_{t-2}$ | $S_{t-1}$ | $S_{t}$ |
-| --------- | --------- | ------- |
-| Jan       | Feb       | March   |
-| 
-
-price of jan will effect feb, and feb will effect march. Which means that jan have a<mark style="background: #FF5582A6;"> indirect correlation</mark> to March. If we have a food festival on Jan and also a food festival on March, so we will have a direct correlation between those 2 events.
-
-ACF = Cov($St_{2},S_{t}$)
-
--> Indirect
--> direct - PACF
-
-to estimate PACF (An AR proces)
-
-$$\hat{\alpha}(h)=\hat{\beta_{h}}$$
-
-If a data has close to AR behavior: we should observed significant PACF up to order = P. 
-
-PACF for $MA(q)\sim AR(\inf)$, which mean, it would never shut off, tails - off behavior 
-
-
-For stationary data, we should take a combination. 
-1. 
-	if ACF plot has a tails off behavior
-
-	PACF plot has a cut_off at lag h = p
-	AR(p)
-
-**MA(q)**;
-ACF plot cut off at h = q
-PACF plot tail off 
-**ARMA(p,q)**:
-unclear 
-both cut-off, or both tail-off
 
 ---
+## ACF plots
+
+![[Pasted image 20231121210058.png]]
+![[Pasted image 20231121210106.png]]
+![[Pasted image 20231121210225.png]]
+![[Pasted image 20231121210130.png]]
+
+
+---
+## Partial Autocorrelation Function (PACF)
+
+- PACF is a component of the Autocorrelation Function (ACF).
+- The Partial Autocorrelation $ 	ext{PACF} $ at lag $ h $ is given by:
+
+  ${PACF}(h) = cov(X_t, X_{t-h} | X_{t-1}, \ldots, X_{t-h+1}$ { are fixed}) 
+
+  This measures the direct correlation between $X_t$ and $X_{t-h}$ when the intervening lags are controlled for.
+
+### Idea
+
+- Consider indirect correlation through intervening periods as demonstrated in the following example:
+
+  January $S_{t-2}$ → Food Festival
+  February $S_{t-1}$
+  March $S_t$ → Food Festival
+
+  There is direct correlation between the Food Festivals of January and March.
+
+## Estimating PACF
+
+- To estimate ${PACF}$ at lag $h$, consider:
+
+$$
+\left.\operatorname{cov}\left(X_t, X_t-h\right)\right|_{x_{t-1}, \ldots, X_{t-h+1}} \text { are fixed }
+$$
+
+  Where $h$ is the coefficient from Multiple Regression (MR) that measures how $X_{t-h}$ and $X_t$ are related, given all the rest are fixed.
+
+
+## Interpretation of PACF
+
+$$
+\text { PACF } \hat{\alpha}(h)=\hat{\beta}_h
+$$
+
+## PACF Plots
+
+- AR(p) shows cutoff behavior after lag $p$.
+- MA(q) shows tapering off or damping behavior.
+- ARMA(p,q) may show a mix of these behaviors.
+
+## Model Selection Criteria
+
+### AIC and BIC
+
+Choose the model with the smallest AIC/BIC value.
+
+**Note**: Fit the model with all the data to calculate AIC/BIC. No train-test method should be combined here.
 
 ### Key words:
 
 ---
-#### TAGS
+#### TAGS:
+#timeseries 

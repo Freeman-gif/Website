@@ -41,7 +41,9 @@ There are multiple ways to navigate my Second Brain:
 | Regression Analysis            | [[Linear Regression Models Main]]                                  |
 
 
-
+# Idea
+Check here if you want to build your own notes system with obsidian(https://obsidian.md/).   [[Build]]
+### Note: The website still under construction, so there will be error and missing tags. 
 
 
 

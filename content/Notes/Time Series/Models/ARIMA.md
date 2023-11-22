@@ -10,6 +10,7 @@
 #### MA, Moving- Average process:
 - Assumes [[stationary process]], $X_{t}$ is related to the <mark style="background: #FF5582A6;">past errors</mark>, $Z_{t-1},\dots,Z_{t-q}$
 #### I: intergrated (differencing Method):
+
 #### SARIMA: S for seasonality (differencing Method ):
 
 #### SARIMAX: add ex. regressor to the model
@@ -45,7 +46,7 @@ $$X_{t} = \theta_{1}BZ_{t}+\theta_{2}B^{2Z_{t}+\dots+\theta_{q}B^{qZ_{t}}+}Z_{t}
 => $$X_{t}=\theta^qB*Z_{t}$$
 
 ### In summary:
-###### note: for AR(p) to be stationary, we need to convert it to some sort of MA(q) function since MA(q) will always stationary 
+###### note: The stationarity condition for an AR(p) process is that all the roots of the characteristic polynomial should lie outside the unit circle in the complex plane. A complex number $\( x = a + bi \) must satisfy \( |x| = \sqrt{a^2 + b^2} > 1 \)$for the process to be stationary.
 - AR(p): $\phi^p(B)*X_{t}=Z_{t}*$
 	- if $X_{t}=(\phi^P(B)^{-1})*Z_{t}$
 - MA(q): $X_{t}=\theta^q(B)*Z_{t}$
@@ -69,7 +70,6 @@ $\phi^p(B)*X_{t}=Z_{t}*$, the generating function $\phi^p(B)*X_{t}$ has all its 
 **Invertible Condition**:
 An MA(q) model can be estimate only if it satisfy the invertible condition:
 - the zero solutions of the generating function $\theta^q(B)$ are<mark style="background: #FF5582A6;"> all outside the unit circle </mark>
-- 
 
  
 ---
@@ -78,11 +78,33 @@ An MA(q) model can be estimate only if it satisfy the invertible condition:
 A stationary process ARMA(P,q), it usually describe a stationary process, where the $X_{t}$ is from 2 part of the past(AR, MA), past from the <mark style="background: #FF5582A6;">error and measurement</mark>
 $$X_{t} = \phi_{1}X_{t-1}=\dots+\phi_{p}X_{t-p}+\theta_{1}X_{t-1}+..+\theta_{q}(Z_{t-q})$$
 
-- more notes
+# Invertibility Condition
+
+The invertibility condition is a critical aspect for the Moving Average (MA) component of an ARMA model. It ensures that the MA model can be inverted to become an AR model.
+
+## Definition
+All the zero solutions for the generating function $\Theta^q(B)$ must lie outside the unit circle.
+
+## ARMA Model
+An ARMA model combines both autoregressive (AR) and moving average (MA) components.
+
+### Equation
+The ARMA(p, q) model can be written as:
+$X_t = \phi_1X_{t-1} + \phi_2X_{t-2} + \dots + \phi_pX_{t-p} + \Theta_1\epsilon_{t-1} + \Theta_2\epsilon_{t-2} + \dots + \Theta_q\epsilon_{t-q} + \epsilon_t$
+
+### White Noise
+The error terms $\epsilon_t$ are assumed to be white noise with a mean of zero and a variance of $\sigma^2$, denoted as:
+$\epsilon_t \sim WN(0, \sigma^2)$
+
+## Conditions for ARMA Model
+An ARMA(p, q) model must satisfy both:
+1. The stationarity condition for the AR component.
+2. The invertibility condition for the MA component.
+
+## Characteristic Polynomials
+The characteristic polynomial for AR is given by $\Phi^p(B)$ and for MA by $\Theta^q(B)$. The solutions to these polynomials (roots) determine the stationarity and invertibility of the model.
 
 ###### note: All ARMA models assume <mark style="background: #FF5582A6;">stationary condition and invertible condition</mark> are satisfy 
--> stationary data
--> unique solutions from estimation 
 
 
 
@@ -133,8 +155,6 @@ given data and create estimation for the data in sample;
 - ARIMA models are better at short-term forecast, not long-term
 - With time step going further, it would lost the support
 - long- term, all the forecast converge to the mean( flat-line), because we are losing the error term to 0 with the losing support of the error 
-- 
-- 
 
 ---
 
