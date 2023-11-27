@@ -13,9 +13,7 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
-        <p>
-          Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>, © {year}
-        </p>
+        <p>Copyright © Matt Dunn {year}</p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
@@ -26,6 +24,7 @@ export default ((opts?: Options) => {
       </footer>
     )
   }
+
 
   Footer.css = style
   return Footer
