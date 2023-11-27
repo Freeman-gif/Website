@@ -13,7 +13,7 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
-        <p>Copyright © Matt Dunn {year}</p>
+        <p>Copyright © Freeman Chen {year}</p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
