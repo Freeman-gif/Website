@@ -6,10 +6,13 @@
 
 **Machine learning = Pattern recognition => make prediction, find insights**
 
-### Type:
+### Method:
 [[Supervise Learning Guide]]
 [[UnSupervise Learning Guide]]
-[[Features]]
+
+
+### Features
+[[Features Engineering]]
 
 
 

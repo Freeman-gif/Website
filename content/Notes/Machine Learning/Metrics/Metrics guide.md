@@ -21,6 +21,8 @@
 
 #### [[Bias Variance Trade off]]
 
+#### Loss Function
+[[WCSS]]
 
 
 
