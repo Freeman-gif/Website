@@ -1,0 +1,3 @@
+
+
+To enhance accuracy and efficiency, we initially opted to set Tile size as 0.2. After testing eight different combinations of match score {60,90}, preview length {60,90}, and Preview Type {TT, AC}, we established a fixed Tile.Size with a default value of 0.2. The graph illustrates that Browse Time is reduced when Preview Type is set to TT ![[Pasted image 20240119105013.png]], Upon conducting a two-sample t-test to compare the Browse Time between Preview Types TT and AC, we obtained a t-statistic of approximately -41.46 and a p-value significantly close to zero. The statistical analysis strongly suggests that we reject the null hypothesis, leading us to conclude that the Browse Time associated with Preview Type TT is significantly lower than that for Preview Type AC. 
