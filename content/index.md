@@ -17,11 +17,15 @@ At present, I'm navigating the intricate world of Data Science as a graduate stu
 # A Single Place for All Data Knowledge
 Welcome to the my second Brain, a one-stop-shop for data-related concepts. Inspired by the Digital Garden analogy, this interactive platform offers a comprehensive collection of data terms, covering various topics.Happy
 # Project I have worked 
-[[Experiment Testing Netflix]]
-[[Alcohol Consumption]]
-[[Basketball Shooting With Regression]]
-[[Spokane Hospital Data Analysis]]
-[[Microsoft Capstone Project]]
+|Projects         |     |
+| --------------------------------------- | --- |
+| [[Alcohol Consumption]]                 |     |
+| [[Basketball Shooting With Regression]] |     |
+| [[Alcohol Consumption]]                 |     |
+| [[Basketball Shooting With Regression]] |     |
+| [[Spokane Hospital Data Analysis]]      |     |
+| [[Microsoft Capstone Project]]          |     |
+|       [[Experiment Testing Netflix]]                                    |     |
 # Navigation
 There are multiple ways to navigate my Second Brain:
 
