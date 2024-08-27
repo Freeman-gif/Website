@@ -3,7 +3,7 @@ title: Welcome to Freeman's Brain
 cssclasses:
 ---
 
-![[top.png]]
+![[IMG_0336.jpg]]
 
 
 ```poetry
